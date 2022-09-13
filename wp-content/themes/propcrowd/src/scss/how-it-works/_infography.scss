@@ -1,0 +1,71 @@
+#infography{
+	padding-bottom: 100px;
+
+
+	header{
+		background: #F2F2F2;
+		padding: 50px 0 180px;
+	}//header
+
+
+	h2{
+		font-weight: 800;
+		font-size: 2.4rem;
+		margin-bottom: 40px;
+	}//h2
+
+
+
+	.info--desktop{
+		display: none;
+	}
+
+
+	.info--mobile{
+		width: 560px;
+		max-width: 100%;
+		display: block;
+		margin: -170px auto 0;
+	}
+
+}//#infography
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+	
+	#infography{
+		margin-top: -150px;
+
+
+		header{
+			background: transparent;
+			padding: 50px 0 0;
+		}//header
+
+
+
+		h2{
+			margin-bottom: 80px;
+		}//h2
+
+
+		.info--desktop{
+			width: 900px;
+			max-width: 100%;
+			margin: -140px auto 0;
+			display: block;
+		}
+	
+	
+		.info--mobile{
+			display: none;
+		}
+
+	}//#infography
+
+}

@@ -1,0 +1,53 @@
+.page-content{
+	padding-bottom: 60px;
+
+
+	a{
+		color: #000;
+		text-decoration: underline;
+	}
+
+
+	h3{
+		font-size: 1.3rem;
+		font-weight: 800;
+		margin-bottom: 30px;
+	}
+
+
+	h6{
+		font-weight: 800;
+	}
+
+
+	.rarr{
+		background: url('../images/long-arrow-r.svg') no-repeat center / 24px;
+		width: 24px;
+		height: 10px;
+		margin-right: 17px;
+		display: inline-block;
+	}
+
+	[class^=ml-] > .rarr,
+	[class^=pl-] > .rarr{
+		margin-left: -41px;
+		margin-top: 6px;
+		float: left;
+	}
+
+}//page-content
+
+
+
+
+@media (min-width: 768px) {
+
+	.page-content{
+
+		h3{
+			font-size: 1.75rem;
+		}
+	
+	}//page-content
+
+}

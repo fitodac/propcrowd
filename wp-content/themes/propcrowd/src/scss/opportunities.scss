@@ -1,0 +1,181 @@
+#opportunitiesHeader{
+	padding-bottom: 80px;
+
+
+	.actions{
+
+		.btn{
+			display: block;
+			width: 100%;
+		}
+
+	}//actions
+
+}//#opportunitiesHeader
+
+
+
+
+
+@media (min-width: 768px) {
+	
+	#opportunitiesHeader{
+	
+		.actions{
+			display: flex;
+	
+			.btn{
+				flex: 1 0 47%;
+				margin-right: 3%;
+			}
+	
+			.btn + .btn{
+				margin-left: 3%;
+				margin-right: 0;
+			}
+		}//actions
+	
+	}//#opportunitiesHeader
+
+}
+
+
+
+
+@media (min-width: 992px) {
+	
+	#opportunitiesHeader{
+	
+		.actions{
+			display: block;
+	
+			.btn{
+				width: auto;
+				display: inline-block;
+			}
+	
+			// .btn + .btn{
+			// 	margin-left: 3%;
+			// 	margin-right: 0;
+			// }
+		}//actions
+	
+	}//#opportunitiesHeader
+
+}
+
+
+
+
+
+
+
+
+
+.search{
+	background: #fff;
+	border: solid 2px #000;
+	height: 46px;
+	padding: 4px;
+	margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 10000px;
+
+
+	button{
+		background: #00ff4b;
+		border: none;
+		color: #000;
+		font-size: 13px;
+		width: 35px;
+		height: 35px;
+		border-radius: 1000px;
+
+		&:focus, &:active:focus{
+			outline: none;
+			box-shadow: none;
+		}
+	}//button
+
+
+
+	input{
+		background: transparent;
+		border: none;
+		padding: 0 15px;
+		flex: 1 0 auto;
+
+		&:focus, &:active:focus{
+			outline: none;
+			box-shadow: none;
+		}
+	}//input
+
+
+}//search
+
+
+
+
+
+
+
+
+#gridCards{
+	padding-bottom: 100px;
+
+	// Estilos provisorios para mostrar el json de las tarjetas
+	.opportunities--desktop{
+		display: none;
+	}
+
+	.opportunities--mobile{
+		width: 560px;
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+	// Fin de estilos provisorios
+
+
+	footer{
+		text-align: center;
+		padding-top: 60px;
+	}
+
+}//#gridCards
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+
+	#gridCards{
+
+		// Estilos provisorios para mostrar el json de las tarjetas
+		.opportunities--desktop{
+			max-width: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+
+
+		.opportunities--mobile{
+			display: none;
+		}
+		// Fin de estilos provisorios
+	
+	}//#gridCards
+
+
+	.search{
+		margin-bottom: 0;
+	}
+
+}

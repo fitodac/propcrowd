@@ -1,0 +1,82 @@
+#register{
+	padding-bottom: 20px;
+
+	form{
+		background: #f2f2f2;
+		padding: 60px;
+
+
+		.h3{
+			margin-bottom: 40px;
+		}//h3
+
+
+		a{
+			color: inherit;
+			font-weight: 700;
+		}
+
+
+		footer{
+			text-align: center;
+			padding-top: 60px;
+
+			.btn{
+				width: 100%;
+			}
+		}
+
+
+		.login{
+			padding-top: 30px;
+		}
+
+
+	}//form
+
+}//#register
+
+
+
+
+@media (min-width: 768px) {
+
+	#register{
+		padding: 80px;
+
+		form{
+
+			footer{
+				
+				.btn{
+					padding-left: 60px;
+					padding-right: 60px;
+					width: auto;
+				}
+			}//footer
+
+		}//form
+
+	}//#register
+
+}
+
+
+
+
+@media (min-width: 992px) {
+
+	#register{
+		padding-bottom: 80px;
+
+		form{
+
+			footer{
+				text-align: initial;
+			}//footer
+
+		}//form
+
+	}//#register
+
+}

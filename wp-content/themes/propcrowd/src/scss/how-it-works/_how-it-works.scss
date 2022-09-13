@@ -1,0 +1,59 @@
+body.how-it-works{
+
+	.page-header{
+		min-height: 300px;
+		background-size: auto 140%;
+		margin-bottom: 0;
+	}//page-header
+
+
+	.page-header.page-header-wave-left::after{
+		background-image: url('../images/wave-special.svg');
+		height: 600px;
+		bottom: -320px;
+	}//page-header
+
+}//how-it-works
+
+
+
+@media (min-width: 992px) {
+
+	body.how-it-works .page-header{
+		background-size: auto 1500px;
+		min-height: 500px;
+	}//how-it-works
+
+	body.how-it-works .page-header.page-header-wave-left::after{
+		right: 20%;
+		width: 130vw;
+	}//how-it-works
+
+}
+
+
+@media (min-width: 1200px) {
+
+	body.how-it-works .page-header.page-header-wave-left::after{
+		right: 36%;
+		width: 110vw;
+	}//how-it-works
+
+}
+
+
+@media (min-width: 1440px) {
+
+	body.how-it-works .page-header.page-header-wave-left::after{
+		right: 43%;
+	}//how-it-works
+
+}
+
+
+
+
+
+
+@import 'infography';
+@import 'register';

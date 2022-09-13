@@ -1,0 +1,185 @@
+.icons-grid{
+	padding: 60px 0 80px;
+
+
+	.h1{
+		margin-bottom: 100px;
+	}
+
+
+	figure{
+		background: $green;
+		width: 160px;
+		height: 160px;
+		flex: 0 0 160px;
+		margin: 0 auto 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 1000px;
+		position: relative;
+		z-index: 10;
+		cursor: pointer;
+
+
+		img{
+			width: 75px;
+			height: 75px;
+		}//img
+
+
+		.icon-01{}
+		.icon-02{}
+		.icon-03{}
+		.icon-04{}
+		.icon-05{}
+		.icon-06{}
+		.icon-07{}
+		.icon-08{}
+
+
+	}//figure
+
+
+	.figcaption{
+		color: #000;
+		font-weight: 800;
+		text-align: center;
+		margin-bottom: 40px;
+	}//figcaption
+
+
+
+	.hover{
+		background: rgba(#000,.8);
+		color: #fff;
+		font-size: 0.9rem;
+		left: 0;
+		top: 0;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		opacity: 0;
+		visibility: hidden;
+		transition: .4s ease-in-out;
+		z-index: 20;
+
+
+		figure{
+			margin: 0;
+			display: none;
+			cursor: default;
+		}//figure
+
+		&.icon-right figure{ order: 2; }
+
+		a{ 
+			color: inherit; 
+			font-weight: 600;
+			pointer-events: initial;
+			text-decoration: underline;
+		}//a
+
+		&.on{
+			visibility: visible;
+			opacity: 1;
+			z-index: 30;
+		}//on
+	}//hover
+
+
+	.hover-body{
+		padding: 80px 40px;
+	}
+
+
+}//icons-grid
+
+
+
+
+
+// @media (min-width: 576px) {
+// 	.icons-grid .hover{ width: 540px; }
+// }
+
+
+
+
+@media (min-width: 768px) {
+
+	.icons-grid{
+
+		.col-md-3{
+			width: auto;
+			flex: 0 0 auto;
+		}//col
+
+
+		figure{
+			margin-left: 0;
+		}//figure
+
+
+		// .hover{
+		// 	width: 720px;
+		// }//hover
+
+
+		// .hover-body{
+		// 	padding: 20px 40px 20px 200px;
+		// }
+
+	}//icons-grid
+
+}
+
+
+
+
+@media (min-width: 992px) {
+
+	.icons-grid{
+		padding-bottom: 100px;
+
+
+		figure{
+			width: 180px;
+			height: 180px;
+			flex: 0 0 180px;
+		}//figure
+
+
+		.hover{
+			width: 700px;
+			height: 180px;
+			position: absolute;
+			border-radius: 1000px;
+
+			figure{
+				display: flex;
+			}//figure
+
+			.hover-body{
+				padding: 20px 40px;
+			}
+		}//hover
+		
+
+	}//icons-grid
+
+}
+
+
+
+@media (min-width: 1200px) {
+	.icons-grid{
+
+		.hover{ width: 900px; }
+
+		// .hover-body{
+		// 	padding-left: 270px;
+		// }
+
+	}
+}

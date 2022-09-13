@@ -1,0 +1,81 @@
+.card-team{
+	font-size: 0.9rem;
+	padding-bottom: 50px;
+
+
+	figure{
+		border-top: solid 8px $green;
+		height: 150px;
+		margin-bottom: 30px;
+		overflow: hidden;
+
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}//figure
+
+
+	.name{
+		font-weight: 800;
+		font-size: 1rem;
+		line-height: 1.1;
+		margin-bottom: 5px;
+	}//name
+
+
+	.pos{
+		font-weight: 600;
+		padding-bottom: 5px;
+	}
+
+	.quote{
+		font-style: italic;
+		line-height: 1.1;
+	}
+
+	.social{
+		font-size: 1.5rem;
+		line-height: 1;
+		padding-top: 15px;
+
+		a{
+			color: $green;
+
+			&:hover, &:focus, &:active, &:active:focus{
+				color: darken($green,5%);
+			}
+		}
+	}//social
+
+
+}//card-team
+
+
+
+
+
+
+@media (min-width: 576px) {
+	.card-team figure{
+		height: 220px;
+	}
+}
+
+
+
+@media (min-width: 768px) {
+
+	.card-team{
+		font-size: 1rem;
+		padding-bottom: 80px;
+
+		.name{
+			font-size: 1.1rem;
+		}//figure
+
+	}//card-team
+
+}
+

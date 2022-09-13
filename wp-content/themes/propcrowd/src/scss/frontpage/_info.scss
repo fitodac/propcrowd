@@ -1,0 +1,70 @@
+#infoSection{
+	background: #f2f2f2 url('../images/bars-down.svg') no-repeat -20px top / 300px;
+	padding: 60px 0 80px;
+
+
+	header{
+		padding-bottom: 30px;
+	}
+
+
+	.h2{
+		font-size: 2rem;
+		font-weight: 800;
+		line-height: 1;
+		letter-spacing: 2px;
+		margin-bottom: 13px;
+	}//h2
+
+
+	.excerpt{
+		font-size: 1.1rem;
+		line-height: 1.5;
+	}//excerpt
+
+
+	.info--desktop{
+		display: none;
+	}
+
+
+	.info--mobile{
+		width: calc(100% - 20px);
+		max-width: 600px;
+		margin: 0 auto;
+		display: block;
+	}//info--mobile
+
+
+}//infoSection
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+	#infoSection{
+		padding: 80px 0 100px;
+
+
+		header{
+			padding-bottom: 0;
+		}
+
+
+		.info--mobile{
+			display: none;
+		}//info--mobile
+
+
+		.info--desktop{
+			width: 100%;
+			margin-top: -80px;
+			display: block;
+		}//info--desktop
+
+	}//infoSection
+
+}

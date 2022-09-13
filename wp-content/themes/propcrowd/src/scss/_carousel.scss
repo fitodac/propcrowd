@@ -1,0 +1,112 @@
+.owl-carousel{
+	height: 100%;
+
+	.owl-stage-outer{
+		height: 100%;
+
+		.owl-stage{
+			height: 100%;
+			
+			.owl-item{
+				height: 100%;
+				overflow: hidden;
+			}//owl-item
+		}//owl-stage
+	}//owl-stage-outer
+
+}//owl-carousel
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------*/
+/*	OWL DOTS
+/*-------------------------------------------------------------------*/
+.owl-carousel .owl-dots{
+	text-align: center;
+
+
+	.owl-dot{
+		padding: 30px 14px !important;
+		display: inline-block;
+
+		span{
+			background: #000;
+			width: 10px;
+			height: 10px;
+			display: block;
+			border-radius: 100px;
+		}
+
+		&.active span{
+			background: transparent;
+			box-shadow: 0 0 0 4px #000;
+		}
+
+		&:focus, &:active, &:active:focus{
+			outline: 0 none;
+			box-shadow: none;
+		}
+	}
+}//owl-dots
+
+
+
+
+.owl-dots-overlay{
+
+	.owl-dots{
+		left: 0;
+		right: 0;
+		bottom: 0;
+		position: absolute;
+		z-index: 10;
+
+
+		.owl-dot{
+			// padding: 30px 14px !important;
+			// display: inline-block;
+
+			span{
+				background: #fff;
+				// width: 10px;
+				// height: 10px;
+				// display: block;
+				// border-radius: 100px;
+			}
+
+			&.active span{
+				// background: transparent;
+				box-shadow: 0 0 0 4px $green;
+			}
+
+		}
+	}//owl-dots
+
+}//owl-dots-overlay
+
+
+
+
+
+
+.owl-nav .owl-next,
+.owl-nav .owl-prev{
+	transition: .3s;
+}
+
+
+
+
+.owl-nav .owl-prev:focus,
+.owl-nav .owl-prev:active,
+.owl-nav .owl-prev:active:focus,
+.owl-nav .owl-next:focus,
+.owl-nav .owl-next:active,
+.owl-nav .owl-next:active:focus{
+	box-shadow: none;
+	outline: 0 none;
+}

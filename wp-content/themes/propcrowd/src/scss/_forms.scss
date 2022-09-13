@@ -1,0 +1,40 @@
+.form-control{
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #000;
+	padding: 8px 0;
+	border-radius: 0;
+
+
+	&:focus{
+		outline: 0 none;
+		border-color: transparent;
+		box-shadow: none;
+	}
+}//form-control
+
+
+
+.form-control-line{
+	background: $green;
+	width: 0;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	transition: width .4s;
+	z-index: 10;
+}
+
+
+.form-control:focus + .form-control-line{
+	width: 100%;
+}
+
+
+
+
+.form-group{
+	margin-bottom: 40px;
+	position: relative;
+}//form-group

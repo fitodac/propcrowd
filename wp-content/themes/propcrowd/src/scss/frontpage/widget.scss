@@ -1,0 +1,333 @@
+#widget{
+	padding-bottom: 80px;
+	margin-top: -230px;
+	position: relative;
+	z-index: 2;
+
+
+
+	header{
+		background: #fff;
+		text-align: center;
+		padding: 65px 20px 40px;
+
+
+		.h5{
+			color: $green;
+			font-size: 1.1rem;
+			font-weight: 800;
+			letter-spacing: 0.6px;
+			text-decoration: underline;
+			margin-bottom: 20px;
+		}//h5
+
+
+		.h2{
+			font-size: 2.8rem;
+			font-weight: 900;
+			margin-bottom: 40px;
+			line-height: 1.1;
+		}//h2
+
+
+		.subtitle{
+			font-size: 1.1rem;
+			line-height: 1.6;
+			margin-bottom: 35px;
+		}//subtitle
+
+
+		img{
+			width: 215px;
+		}//img
+
+	}//header
+
+
+
+
+	.evaluation{
+		border-top: solid 10px $green;
+		height: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		padding: 20px 0 0;
+
+
+		.h5{
+			font-size: 1.5rem;
+			font-weight: 800;
+			margin-bottom: 10px;
+		}//h5
+
+
+
+
+
+		.slider{
+			padding: 80px 0 70px;
+
+			[type=number]{
+				border: solid 5px #fadd4b;
+				color: #000;
+				text-align: center;
+				font-size: 1.3rem;
+				line-height: 1;
+				font-weight: 600;
+				width: 140px;
+				padding: 10px 20px;
+
+				& + span{
+					font-size: 1.8rem;
+					padding-left: 10px;
+					display: inline-block;
+				}
+			}
+			
+
+			.slider-container{
+				width: 100%;
+				margin-bottom: 40px;
+
+
+				.scale span{
+					border: none;
+					
+					ins{
+						background: #e1e4e9;
+						font-family: $monse;
+						font-size: 0.8rem;
+						line-height: 1;
+						padding: 4px 5px;
+						top: -40px;
+
+						&::after{ content: '€'; }
+					}
+				}
+
+				.scale span:first-child{
+					display: none;
+				}
+			}
+
+			.theme-green{
+				.back-bar{
+					background: #e1e4e9;
+					height: 14px;
+					border-radius: 0;
+
+
+					.pointer{
+						background: #fff;
+						border: solid 4px #dc626a;
+						width: 34px;
+						height: 34px;
+						top: -11px;
+						border-radius: 1000px;
+					}//pointer
+
+					.pointer-label{
+						background: #dc626a;
+						color: #fff;
+						font-family: $monse;
+						font-size: 0.9rem;
+						padding: 5px 8px;
+						top: -44px;
+
+						&::after{
+							content: '';
+							border-top: solid 8px#dc626a;
+							border-left: solid 8px transparent;
+							border-right: solid 8px transparent;
+							margin-left: -10px;
+							left: 50%;
+							bottom: -7px;
+							position: absolute;
+						}
+					}//pointer-label
+
+
+					.selected-bar{
+						background: #dc626a;
+						border-radius: 0;
+					}//selected-bar
+
+				}//back-bar
+			}//theme-green
+
+		}//slider
+
+
+
+
+
+		footer{
+
+			.h5{
+				background: #000;
+				color: #fff;
+				font-size: 1.2rem;
+				font-weight: 800;
+				padding: 12px 24px;
+			}//h5
+
+
+			.info{
+				background: #f5f5f5;
+				font-size: 1rem; 
+				font-weight: 500;
+				line-height: 1.4;
+				display: flex;
+				justify-content: space-between;
+				padding: 4px 22px;
+
+				&:first-child{ padding-top: 10px; }
+				&:last-child{ padding-bottom: 10px; }
+
+
+				strong{
+					font-weight: 600;
+					display: block;
+				}
+				span{
+					color: #666;
+					display: block;
+				}
+
+			}//info
+
+		}//footer
+
+	}//evaluation
+
+
+
+	figure{
+		height: 300px;
+		margin-bottom: 30px;
+		overflow: hidden;
+
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}//figure
+
+
+	.stats{
+		padding-left: 20px;
+		padding-right: 20px;
+
+
+		.info-progress{
+			strong{
+				display: block;
+				margin-bottom: 5px;
+			}
+
+
+			.progress{
+				.progress-bar{
+					background-color: #57b991;
+				}
+				.progress-bar-striped{
+					background-image: linear-gradient(-45deg,#fff 25%,transparent 25%,transparent 50%,#fff 50%,#fff 75%,transparent 75%,transparent);
+					background-size: 9px 9px;
+				}
+			}//progress
+
+		}//info-progress
+
+		span{
+			color: #57b991;
+			font-weight: 500;
+			letter-spacing: .5px;
+		}
+
+		.btn-secondary{
+			font-size: 1.2rem;
+			font-weight: 800;
+			letter-spacing: .4px;
+		}
+	}//stats
+
+
+
+}//widget
+
+
+
+
+
+@media (min-width: 768px) {
+
+	#widget{
+
+		header{
+			padding-left: 50px;
+			padding-right: 50px;
+
+
+			.h5{
+				font-size: 1.2rem;
+			}
+
+			.h2{
+				font-size: 3.8rem;
+				margin-bottom: 20px;
+			}//h2
+
+			.subtitle{
+				font-size: 1.3rem;
+				line-height: 1.5;
+				margin-bottom: 20px;
+			}
+
+			img{ width: 190px; }
+
+		}//header
+
+	}//widget
+
+}
+
+
+
+
+@media (min-width: 992px) {
+
+	#widget{
+		margin-top: -240px;
+
+
+		header{
+
+			.h2{
+				font-size: 3.6rem;
+			}//h2
+
+			.subtitle{
+				margin-bottom: 10px;
+			}
+
+			img{ width: 150px; }
+
+		}//header
+
+
+		.evaluation{
+			margin-right: 60px;
+		}
+
+		figure{
+			margin-left: 60px;
+		}
+
+		.stats{
+			margin-left: 60px;
+		}
+
+	}//widget
+
+}

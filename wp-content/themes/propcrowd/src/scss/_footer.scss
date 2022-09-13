@@ -1,0 +1,201 @@
+.main-footer{
+	background: #fff;
+	border-top: solid 1px #f2f2f2;
+	font-size: 0.95rem;
+	line-height: 1.7;
+	letter-spacing: 0.5px;
+	text-align: center;
+	// padding: 65px 0 45px;
+	padding: 65px 0 10px;
+
+
+	.row [class^=col-]{
+		padding-bottom: 30px;
+	}
+
+
+	a:not(.link){ text-decoration: underline; }
+	
+	a{
+		color: inherit;
+
+		&:hover, &:active, &:focus, &:active:focus{
+			color: $green;
+		}
+	}//a
+
+
+	.h4{
+		color: #c6c6c6;
+		font-size: 1.1rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: .5px;
+		margin-bottom: 5px;
+	}//h4
+
+
+
+
+	.iso{
+		width: 100px;
+		height: 110px;
+	}//iso
+
+
+
+
+	.social{
+		padding-top: 10px;
+		justify-content: center;
+
+		.nav-link{
+			color: $green;
+			font-size: 1.6rem;
+
+			&:hover, &:active, &:focus, &:active:focus{
+				color: darken($green, 5%);
+			}
+		}
+	}//social
+
+
+
+	.list-unstyled{
+
+		.fab{
+			color: $green;
+			width: 15px;
+			margin-right: 7px;
+			display: inline-block;
+		}
+	}
+
+
+}//main-footer
+
+
+
+
+
+@media (min-width: 768px) {
+
+	.main-footer{
+		text-align: left;
+		padding-bottom: 60px;
+
+		.row [class^=col-]{
+			padding-bottom: 0;
+		}
+
+	}//main-footer
+
+}
+
+
+
+
+
+
+.main-footer-secondary{
+	background: $dark;
+	color: #999;
+	border-bottom: solid 10px $green;
+	font-size: 0.9rem;
+	text-align: center;
+	padding: 40px 0;
+
+
+	.copy{
+		display: block;
+	}
+
+
+	.nav{
+		justify-content: center;
+
+		.nav-link{
+			color: #999;
+			position: relative;
+
+			&::after{
+				content: '';
+				background: #999;
+				width: 1.5px;
+				height: 11px;
+				right: 0;
+				top: 14px;
+				position: absolute;
+			}
+
+		}//nav-link
+		
+		.nav-item:last-child .nav-link::after{
+			display: none;
+		}
+	}//nav
+
+
+}//main-footer-secondary
+
+
+
+
+
+@media (min-width: 992px) {
+
+	.main-footer-secondary{
+		padding: 24px 0;
+
+		.copy{
+			display: inline-block;
+		}
+
+		.nav{
+			display: inline-block;
+
+			.nav-item{ display: inline-block; }
+		}
+	}//main-footer-secondary
+
+}
+
+
+
+
+
+
+.back-to-top{
+	background: #fff url('../images/angle-up.svg') no-repeat center / 14px;
+	width: 50px;
+	height: 50px;
+	right: 20px;
+	bottom: 20px;
+	position: fixed;
+	border-radius: 10000px;
+	transform: translate(0,200px);
+	transition: background .3s, transform .5s ease-in-out;
+	cursor: pointer;
+	box-shadow: 0 0 40px rgba(#000,.15);
+	z-index: 30;
+
+
+	&.on{
+		transform: translate(0,0);
+	}//on
+}//back-top-top
+
+
+
+
+
+@media (min-width: 768px) {
+
+	.back-to-top:hover,
+	.back-to-top:focus,
+	.back-to-top:active,
+	.back-to-top:active:focus{
+		background-color: $green;
+	}//back-top-top
+
+}
